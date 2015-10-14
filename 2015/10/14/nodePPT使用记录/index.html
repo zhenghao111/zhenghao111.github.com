@@ -4,22 +4,32 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Zheng Hao&#39;s Blog</title>
+    <title>nodePPT使用记录 | Zheng Hao&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Zheng Hao">
     
 
     
-    <meta name="description" content="加牛~Think·Create·Solve">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zheng Hao's Blog">
-<meta property="og:url" content="http://zhenghao111.github.io/index.html">
+    <meta name="description" content="安装：npm install -g nodeppt
+启动：nodeppt start -d &amp;lt;目录&amp;gt;nodeppt start -c socketnodeppt start -d &amp;lt;目录&amp;gt; -p &amp;lt;端口&amp;gt; -H &amp;lt;IP&amp;gt; -c socket
+手机控制：按Q键
+目录关系md同级可以创建img、js、css文件夹来引用静态资源，没有找到使用默认的asse">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nodePPT使用记录">
+<meta property="og:url" content="http://zhenghao111.github.io/2015/10/14/nodePPT使用记录/index.html">
 <meta property="og:site_name" content="Zheng Hao's Blog">
-<meta property="og:description" content="加牛~Think·Create·Solve">
+<meta property="og:description" content="安装：npm install -g nodeppt
+启动：nodeppt start -d &amp;lt;目录&amp;gt;nodeppt start -c socketnodeppt start -d &amp;lt;目录&amp;gt; -p &amp;lt;端口&amp;gt; -H &amp;lt;IP&amp;gt; -c socket
+手机控制：按Q键
+目录关系md同级可以创建img、js、css文件夹来引用静态资源，没有找到使用默认的asse">
+<meta property="og:updated_time" content="2015-10-14T03:21:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zheng Hao's Blog">
-<meta name="twitter:description" content="加牛~Think·Create·Solve">
+<meta name="twitter:title" content="nodePPT使用记录">
+<meta name="twitter:description" content="安装：npm install -g nodeppt
+启动：nodeppt start -d &amp;lt;目录&amp;gt;nodeppt start -c socketnodeppt start -d &amp;lt;目录&amp;gt; -p &amp;lt;端口&amp;gt; -H &amp;lt;IP&amp;gt; -c socket
+手机控制：按Q键
+目录关系md同级可以创建img、js、css文件夹来引用静态资源，没有找到使用默认的asse">
 
     
     <link rel="alternative" href="/atom.xml" title="Zheng Hao&#39;s Blog" type="application/atom+xml">
@@ -76,12 +86,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2015/10/14/nodePPT使用记录/" title="nodePPT使用记录" itemprop="url">nodePPT使用记录</a>
@@ -95,9 +103,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <h2 id="安装：">安装：</h2><p><code>npm install -g nodeppt</code></p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装："><span class="toc-number">1.</span> <span class="toc-text">安装：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动："><span class="toc-number">2.</span> <span class="toc-text">启动：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#手机控制："><span class="toc-number">3.</span> <span class="toc-text">手机控制：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目录关系"><span class="toc-number">4.</span> <span class="toc-text">目录关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Theme："><span class="toc-number">5.</span> <span class="toc-text">Theme：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#转场动画："><span class="toc-number">6.</span> <span class="toc-text">转场动画：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#subslide:"><span class="toc-number">7.</span> <span class="toc-text">subslide:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单页背景："><span class="toc-number">8.</span> <span class="toc-text">单页背景：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单条动画："><span class="toc-number">9.</span> <span class="toc-text">单条动画：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对齐"><span class="toc-number">10.</span> <span class="toc-text">对齐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标题"><span class="toc-number">11.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文本"><span class="toc-number">12.</span> <span class="toc-text">文本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签和链接"><span class="toc-number">13.</span> <span class="toc-text">标签和链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">14.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按钮"><span class="toc-number">15.</span> <span class="toc-text">按钮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图标"><span class="toc-number">16.</span> <span class="toc-text">图标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码高亮样式"><span class="toc-number">17.</span> <span class="toc-text">代码高亮样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#转场回调"><span class="toc-number">18.</span> <span class="toc-text">转场回调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表格实例"><span class="toc-number">19.</span> <span class="toc-text">表格实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插入iframe"><span class="toc-number">20.</span> <span class="toc-text">插入iframe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#note"><span class="toc-number">21.</span> <span class="toc-text">note</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用画笔"><span class="toc-number">22.</span> <span class="toc-text">使用画笔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#宽度不够"><span class="toc-number">23.</span> <span class="toc-text">宽度不够</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用overview模式"><span class="toc-number">24.</span> <span class="toc-text">使用overview模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多窗口演示"><span class="toc-number">25.</span> <span class="toc-text">多窗口演示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事件update"><span class="toc-number">26.</span> <span class="toc-text">事件update</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#watch功能"><span class="toc-number">27.</span> <span class="toc-text">watch功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导出_PDF_或_HTML"><span class="toc-number">28.</span> <span class="toc-text">导出 PDF 或 HTML</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="安装：">安装：</h2><p><code>npm install -g nodeppt</code></p>
 <h2 id="启动：">启动：</h2><p><code>nodeppt start -d &lt;目录&gt;</code><br><code>nodeppt start -c socket</code><br><code>nodeppt start -d &lt;目录&gt; -p &lt;端口&gt; -H &lt;IP&gt; -c socket</code></p>
 <h2 id="手机控制：">手机控制：</h2><p><code>按Q键</code></p>
 <h2 id="目录关系">目录关系</h2><p>md同级可以创建img、js、css文件夹来引用静态资源，没有找到使用默认的<code>assets</code>文件夹下的资源   </p>
@@ -162,14 +177,9 @@
 <h2 id="宽度不够">宽度不够</h2><p>按下键盘【W】键，切换到更宽的页面看效果，第二次按键返回</p>
 <h2 id="使用overview模式">使用overview模式</h2><p>按下键盘【O】键<br>在overview模式下，方向键下一页，【enter】键进入选中页<br>或者按下键盘【O】键，退出overview模式</p>
 <h2 id="多窗口演示">多窗口演示</h2><h2 id="事件update">事件update</h2><h2 id="watch功能">watch功能</h2><p><code>nodeppt start -w</code></p>
-<h2 id="导出_PDF_或_HTML">导出 PDF 或 HTML</h2>
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+<h2 id="导出_PDF_或_HTML">导出 PDF 或 HTML</h2>  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -187,198 +197,47 @@
 
 
 
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://zhenghao111.github.io/2015/10/14/nodePPT使用记录/" data-title="nodePPT使用记录 | Zheng Hao&#39;s Blog" data-tsina="1782629540" class="share clearfix">
+	  </div>
+	
+	</div>
 
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/10/14/nodePPT使用记录/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/10/14/nodePPT使用记录/" data-count-type="comments">&nbsp;</a>
-	
-</div>
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/09/28/CentOS上安装FTP服务器/" title="CentOS上安装FTP服务器" itemprop="url">CentOS上安装FTP服务器</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Zheng Hao" target="_blank" itemprop="author">Zheng Hao</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-28T13:20:35.000Z" itemprop="datePublished"> 发表于 2015-09-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/CentOS/">CentOS</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
-	  	<span></span>
-		<a href="/2015/09/28/CentOS上安装FTP服务器/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/28/CentOS上安装FTP服务器/" data-count-type="comments">&nbsp;</a>
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/09/28/CentOS上安装FTP服务器/"  title="CentOS上安装FTP服务器">
+ <strong>下一篇：</strong><br/> 
+ <span>CentOS上安装FTP服务器
+</span>
+</a>
+</div>
+
+</nav>
+
 	
-</div>
-
-</footer>
-
-
-    </article>
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/10/14/nodePPT使用记录/" data-title="nodePPT使用记录" data-url="http://zhenghao111.github.io/2015/10/14/nodePPT使用记录/"></div>
+</section>
 
 
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/09/28/CentOS上安装Oracle12c/" title="CentOS上安装Oracle 12c" itemprop="url">CentOS上安装Oracle 12c</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Zheng Hao" target="_blank" itemprop="author">Zheng Hao</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-28T13:20:02.000Z" itemprop="datePublished"> 发表于 2015-09-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/CentOS/">CentOS</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/28/CentOS上安装Oracle12c/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/28/CentOS上安装Oracle12c/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/09/28/Mac常用软件/" title="Mac常用软件" itemprop="url">Mac常用软件</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Zheng Hao" target="_blank" itemprop="author">Zheng Hao</a>
-		
-  <p class="article-time">
-    <time datetime="2015-09-28T13:16:46.000Z" itemprop="datePublished"> 发表于 2015-09-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Mac/">Mac</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/09/28/Mac常用软件/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/09/28/Mac常用软件/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装："><span class="toc-number">1.</span> <span class="toc-text">安装：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动："><span class="toc-number">2.</span> <span class="toc-text">启动：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#手机控制："><span class="toc-number">3.</span> <span class="toc-text">手机控制：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目录关系"><span class="toc-number">4.</span> <span class="toc-text">目录关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Theme："><span class="toc-number">5.</span> <span class="toc-text">Theme：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#转场动画："><span class="toc-number">6.</span> <span class="toc-text">转场动画：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#subslide:"><span class="toc-number">7.</span> <span class="toc-text">subslide:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单页背景："><span class="toc-number">8.</span> <span class="toc-text">单页背景：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单条动画："><span class="toc-number">9.</span> <span class="toc-text">单条动画：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对齐"><span class="toc-number">10.</span> <span class="toc-text">对齐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标题"><span class="toc-number">11.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文本"><span class="toc-number">12.</span> <span class="toc-text">文本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签和链接"><span class="toc-number">13.</span> <span class="toc-text">标签和链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">14.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按钮"><span class="toc-number">15.</span> <span class="toc-text">按钮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图标"><span class="toc-number">16.</span> <span class="toc-text">图标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码高亮样式"><span class="toc-number">17.</span> <span class="toc-text">代码高亮样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#转场回调"><span class="toc-number">18.</span> <span class="toc-text">转场回调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表格实例"><span class="toc-number">19.</span> <span class="toc-text">表格实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插入iframe"><span class="toc-number">20.</span> <span class="toc-text">插入iframe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#note"><span class="toc-number">21.</span> <span class="toc-text">note</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用画笔"><span class="toc-number">22.</span> <span class="toc-text">使用画笔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#宽度不够"><span class="toc-number">23.</span> <span class="toc-text">宽度不够</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用overview模式"><span class="toc-number">24.</span> <span class="toc-text">使用overview模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多窗口演示"><span class="toc-number">25.</span> <span class="toc-text">多窗口演示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事件update"><span class="toc-number">26.</span> <span class="toc-text">事件update</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#watch功能"><span class="toc-number">27.</span> <span class="toc-text">watch功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导出_PDF_或_HTML"><span class="toc-number">28.</span> <span class="toc-text">导出 PDF 或 HTML</span></a></li></ol>
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -548,12 +407,89 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -660,4 +596,4 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
